@@ -120,14 +120,14 @@
       <h1>Privacy Policy for TalentUp Applications</h1>
       <div class="meta">
         <span>Effective date: 1 October 2026</span>
-        <span>Last updated: 28 September 2026</span>
+        <span>Last updated: 2 October 2026</span>
       </div>
     </div>
   </section>
 
   <main class="content">
     <div class="notice">
-<p>This Privacy Policy explains how <strong>Satsun</strong> (“we”, “us”, “our”) collects, uses, shares and protects information when you use <strong>TalentUp Class10 Math</strong>, both the Android app on Google Play and the website at <a href="https://class10math.satsuntech.in">class10math.satsuntech.in</a>, and any other TalentUp application that links to this policy. Satsun is the Data Fiduciary for this information under India’s Digital Personal Data Protection Act, 2023 (the “DPDP Act”).</p>
+<p>This Privacy Policy explains how <strong>Satsun</strong> (“we”, “us”, “our”) collects, uses, shares and protects information when you use <strong>TalentUp Class10 Math</strong>, the Android app on Google Play, the iPhone app on the Apple App Store and the website at <a href="https://class10math.satsuntech.in">class10math.satsuntech.in</a>, and any other TalentUp application that links to this policy. Satsun is the Data Fiduciary for this information under India’s Digital Personal Data Protection Act, 2023 (the “DPDP Act”).</p>
 <p><strong>The short version</strong></p>
 <ul>
 <li>A <strong>parent or guardian</strong> signs in and manages the account. The Class 10 student uses it to learn.</li>
@@ -147,7 +147,7 @@
 <h2>2. Children and parental consent</h2>
 <p>TalentUp Class10 Math is made for Class 10 students, who are usually 14–16 years old. Under the DPDP Act, anyone under 18 is a child, so a parent or guardian must be involved:</p>
 <ul>
-<li>The account should be <strong>created and signed in to by the parent or legal guardian</strong>, using the parent’s Google account or mobile number. The parent then enters the student’s name in the parent profile.</li>
+<li>The account should be <strong>created and signed in to by the parent or legal guardian</strong>, using the parent’s Google account, Apple Account or mobile number. The parent then enters the student’s name in the parent profile.</li>
 <li>By creating the account and completing the parent profile, the parent or guardian <strong>consents</strong> to our processing of the child’s information as this policy describes.</li>
 <li>If you are a student under 18, please ask your parent or guardian to set up the account for you.</li>
 <li>We do not knowingly process a child’s information without a parent’s consent. If you think a child is using TalentUp without that consent, contact us and we will delete the account.</li>
@@ -160,8 +160,8 @@
 <section id="sign-in-and-account" class="level3">
 <h3>3.1 Sign-in and account</h3>
 <ul>
-<li>We use <strong>Firebase Authentication</strong> for sign-in with <strong>Google</strong> or with a <strong>mobile number and one-time password (OTP)</strong>.</li>
-<li>We receive a unique user ID. With Google sign-in we also receive the account’s email address and name. With OTP sign-in we receive the mobile number used.</li>
+<li>We use <strong>Firebase Authentication</strong> for sign-in with <strong>Google</strong>, with <strong>Apple</strong> (on iPhone) or with a <strong>mobile number and one-time password (OTP)</strong>.</li>
+<li>We receive a unique user ID. With Google sign-in we also receive the account’s email address and name. With Sign in with Apple we receive the email address you choose to share, which may be a private relay address from Apple’s Hide My Email, and your name if you choose to share it. With OTP sign-in we receive the mobile number used.</li>
 <li>We also create a randomly generated <strong>device-session identifier</strong> with timestamps. We use it to show a notice when the account is signed in on another device.</li>
 </ul>
 </section>
@@ -195,14 +195,16 @@
 <h3>3.5 Voice features</h3>
 <ul>
 <li><strong>Teacher voice (text-to-speech):</strong> to read lessons aloud, we send the lesson text to a text-to-speech service. This is curriculum text, not your personal information. The audio it produces may be cached on the device and on our servers so that it can be reused.</li>
-<li><strong>Voice typing:</strong> you can tap the microphone to speak a question or an answer instead of typing it. The app first asks for microphone permission. Your speech is turned into text by your device’s or browser’s speech-recognition service, such as Google’s speech service on Android. The app uses only the text that comes back. <strong>We do not record or store audio of your voice.</strong></li>
+<li><strong>Voice typing:</strong> you can tap the microphone to speak a question or an answer instead of typing it. The app first asks for microphone permission. Your speech is turned into text by your device’s or browser’s speech-recognition service, such as Google’s speech service on Android or Apple’s speech recognition on iPhone. The app uses only the text that comes back. <strong>We do not record or store audio of your voice.</strong></li>
 </ul>
 </section>
 <section id="subscriptions-and-payments" class="level3">
 <h3>3.6 Subscriptions and payments</h3>
 <ul>
-<li><strong>Android:</strong> payments are processed by <strong>Google Play</strong>. <strong>RevenueCat</strong> manages the subscription for us and receives purchase information, such as the product, the purchase and expiry dates and store transaction identifiers, linked to your TalentUp user ID.</li>
-<li><strong>Website:</strong> payments are processed by <strong>Razorpay</strong>.</li>
+<li><strong>Android:</strong> payments are processed by <strong>Google Play</strong>.</li>
+<li><strong>iPhone:</strong> payments are processed by <strong>Apple</strong> through the App Store.</li>
+<li>For both, <strong>RevenueCat</strong> manages the subscription for us and receives purchase information, such as the product, the purchase and expiry dates and store transaction identifiers, linked to your TalentUp user ID.</li>
+<li><strong>Website:</strong> payments will be processed by <strong>Razorpay</strong> when website payments become available.</li>
 <li>We store only the <strong>subscription status</strong> and related details: the store, product, expiry and last subscription event. <strong>We never receive or store card, UPI or bank-account details.</strong></li>
 </ul>
 </section>
@@ -210,7 +212,8 @@
 <h3>3.7 Technical, security and crash information</h3>
 <ul>
 <li><strong>Firebase Crashlytics</strong> collects crash reports. A crash report contains the error details, device model, operating-system and app versions, a Crashlytics installation identifier and the device’s state at the time of the crash, such as free memory.</li>
-<li><strong>Firebase App Check</strong>, which uses <strong>Google Play Integrity</strong> on Android, checks that requests come from the genuine app on a genuine device. To do this it uses device-integrity signals and security tokens.</li>
+<li><strong>Firebase App Check</strong>, which uses <strong>Google Play Integrity</strong> on Android and <strong>Apple App Attest and DeviceCheck</strong> on iPhone, checks that requests come from the genuine app on a genuine device. To do this it uses device-integrity signals and security tokens.</li>
+<li>On iPhone, Firebase Authentication may send a silent Apple push notification to the app to confirm that a mobile-number sign-in request comes from the genuine app.</li>
 <li>Our service providers may automatically record technical data in their service logs, such as IP address, device and network information and timestamps. <strong>Our own server logs are designed not to contain phone numbers, names or answer text.</strong></li>
 </ul>
 </section>
@@ -281,46 +284,51 @@
 <td>Purchase details and device-integrity signals</td>
 </tr>
 <tr class="odd">
-<td><strong>RevenueCat</strong></td>
-<td>Managing Android subscriptions</td>
-<td>TalentUp user ID, purchase and subscription status</td>
+<td><strong>Apple</strong> (App Store, Sign in with Apple, App Attest and DeviceCheck, push notifications)</td>
+<td>iPhone payments, Sign in with Apple, device-integrity checks and sign-in verification</td>
+<td>Purchase details, the name and email you choose to share with Sign in with Apple, and device-integrity signals</td>
 </tr>
 <tr class="even">
+<td><strong>RevenueCat</strong></td>
+<td>Managing Android and iPhone subscriptions</td>
+<td>TalentUp user ID, purchase and subscription status</td>
+</tr>
+<tr class="odd">
 <td><strong>Razorpay</strong></td>
 <td>Website payments</td>
 <td>The payment details you enter on Razorpay’s checkout (we receive only the payment status)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><strong>OpenAI</strong></td>
 <td>Ask AI tutor, lesson generation, backup answer-paper marking and text-to-speech</td>
 <td>Questions, lesson context, answer-paper pages (backup marking only) and lesson text</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><strong>Anthropic</strong></td>
 <td>Answer-paper marking, weekly parent-report text and AI tutoring</td>
 <td>Answer-paper pages, questions and marking schemes, and numbers-only weekly statistics</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><strong>Google Cloud Text-to-Speech</strong></td>
 <td>Teacher voice</td>
 <td>Lesson text</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><strong>ElevenLabs</strong></td>
 <td>Teacher voice</td>
 <td>Lesson text</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><strong>Satsun voice service</strong> (run by us on Google Cloud)</td>
 <td>Teacher voice</td>
 <td>Lesson text</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><strong>Meta (WhatsApp Business Platform)</strong></td>
 <td>Optional weekly WhatsApp updates</td>
 <td>Parent’s WhatsApp number and the weekly summary</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><strong>Your device’s or browser’s speech services</strong></td>
 <td>Voice typing and device voice</td>
 <td>Your speech, processed by that service to produce text</td>
@@ -360,17 +368,17 @@
 <li><strong>Answer-paper images:</strong> not kept on our servers after marking. Only the answers, marks and feedback are saved.</li>
 <li><strong>Crash reports:</strong> kept by Firebase Crashlytics for up to 90 days.</li>
 <li><strong>WhatsApp opt-out record:</strong> the hashed record described in section 6, kept so that we can respect the opt-out.</li>
-<li><strong>Purchase records:</strong> Google Play, RevenueCat and Razorpay keep transaction records under their own terms and tax laws.</li>
+<li><strong>Purchase records:</strong> Google Play, Apple, RevenueCat and Razorpay keep transaction records under their own terms and tax laws.</li>
 <li><strong>Shared lesson cache:</strong> some standard AI lesson explanations are stored without any link to an account and reused for all students.</li>
 <li>We may keep limited information for longer if the law requires it, or to resolve a dispute or prevent fraud.</li>
 </ul>
 </section>
 <section id="delete-account" class="level2">
 <h2>12. How to delete your TalentUp account and data</h2>
-<p><strong>In the app (Android or web):</strong> open <strong>Profile → Delete account</strong> and confirm. You may be asked to sign in again first.</p>
+<p><strong>In the app (Android, iPhone or web):</strong> open <strong>Profile → Delete account</strong> and confirm. You may be asked to sign in again first. If you signed in with Apple, you will also be asked to confirm with Apple, so that TalentUp’s access to your Apple Account is revoked.</p>
 <p><strong>This deletes:</strong> your sign-in account; the parent profile, including the WhatsApp number and setting; learning sessions; practice and test answers and marks; Mistake Book entries; study plans; mastery data; weekly statistics and parent reports; WhatsApp send history; free-use, subscription-status and usage records; and device-session records. Deletion starts as soon as you confirm.</p>
-<p><strong>This is not deleted:</strong> the hashed WhatsApp opt-out record (section 6); purchase records held by Google Play, RevenueCat or Razorpay; crash reports until they expire (up to 90 days); and anything we must keep by law.</p>
-<p><strong>Subscriptions:</strong> deleting the account does <strong>not</strong> cancel a Google Play subscription. To cancel, open the Play Store app and go to <strong>Profile → Payments &amp; subscriptions → Subscriptions</strong>.</p>
+<p><strong>This is not deleted:</strong> the hashed WhatsApp opt-out record (section 6); purchase records held by Google Play, Apple, RevenueCat or Razorpay; crash reports until they expire (up to 90 days); and anything we must keep by law.</p>
+<p><strong>Subscriptions:</strong> deleting the account does <strong>not</strong> cancel a Google Play subscription. To cancel, open the Play Store app and go to <strong>Profile → Payments &amp; subscriptions → Subscriptions</strong>. Deleting the account also does <strong>not</strong> cancel an App Store subscription. To cancel on iPhone, open the <strong>Settings</strong> app, tap your name, then tap <strong>Subscriptions</strong>.</p>
 <p><strong>By email:</strong> if you cannot use the app, email <strong><a href="mailto:support@satsuntech.com">support@satsuntech.com</a></strong> with the subject “Delete my TalentUp account”. Send it from the email address on the account, or include the mobile number used to sign in. We will verify the request, delete the account and confirm by email.</p>
 <p><strong>Deleting only some data:</strong> to delete particular data without deleting the account, email us and say what you want removed.</p>
 <p>Uninstalling the app does not delete your account or data.</p>
@@ -392,7 +400,7 @@
 <h2>14. App permissions</h2>
 <ul>
 <li><strong>Internet:</strong> needed to sign in, save progress and use AI and voice features.</li>
-<li><strong>Microphone:</strong> used only for voice typing, and only when you tap the microphone.</li>
+<li><strong>Microphone</strong> (and <strong>Speech Recognition</strong> on iPhone): used only for voice typing, and only when you tap the microphone.</li>
 <li><strong>Camera and photos:</strong> when you add answer pages, the app uses your phone’s camera or photo picker. It receives only the pictures you take or choose.</li>
 </ul>
 <p>If you refuse a permission, only the feature that needs it stops working.</p>
